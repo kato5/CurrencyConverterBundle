@@ -17,7 +17,6 @@ class ConverterController extends Controller
      */
     public function index()
     {
-//        return $this->render('converter/index.html.twig');
         return $this->render('@KatoCurrencyConverter/converter/index.html.twig');
     }
     
@@ -27,7 +26,7 @@ class ConverterController extends Controller
     public function ajax(Request $request, CurrencyConverter $currencyConverter)
     {
 
-        if ($request->isXmlHttpRequest() || $request->query->get('showJson') == 1) {  
+        if ($request->isXmlHttpRequest()) {  
             
             $amount = floatval($request->request->get('amount'));
                       
@@ -42,14 +41,6 @@ class ConverterController extends Controller
         } 
 
     }
-    
-    /**
-     * @Route("/test", name="test")
-     */
-    public function test()
-    {
-        echo 'TEST';
-        return $this->render('homepage/index.html.twig');
-    }    
+       
     
 }
