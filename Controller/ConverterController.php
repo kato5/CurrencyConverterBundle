@@ -1,13 +1,13 @@
 <?php
 
-namespace Kato\CurrrencyConverterBundle\Controller;
+namespace Kato\CurrencyConverterBundle\Controller;
 
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Kato\CurrrencyConverterBundle\Utils\CurrencyConverter;
+use Kato\CurrencyConverterBundle\Utils\CurrencyConverter;
 
 
 class ConverterController extends Controller
