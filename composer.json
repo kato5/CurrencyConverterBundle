@@ -1,6 +1,6 @@
 {
     "name": "kato/currency-converter-bundle",
-    "description": "This bundle converts currency from one to another using api to get currenct currency rate",
+    "description": "This bundle converts currency from one to another using api to get current currency rate",
     "keywords": ["currency", "converter", "lightweight", "currency converter"],
     "type": "symfony-bundle",
     "license": "MIT",
