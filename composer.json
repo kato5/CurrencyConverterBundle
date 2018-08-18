@@ -1,0 +1,17 @@
+{
+    "name": "kato/currency-converter-bundle",
+    "description": "krótki opis bundle",
+    "keywords": ["currency", "converter", "lightweight", "currency converter"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Krzysztof Frydrych"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Kato\\CurrencyConverterBundle\\": ""
+        }
+    }
+}
