@@ -18,7 +18,7 @@ class ConverterController extends Controller
     public function index()
     {
 //        return $this->render('converter/index.html.twig');
-        return $this->render('@KatoCurrencyConverterBundle/converter/index.html.twig');
+        return $this->render('@KatoCurrencyConverter/converter/index.html.twig');
     }
     
     /**
