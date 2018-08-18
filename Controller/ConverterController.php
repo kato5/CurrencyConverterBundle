@@ -17,7 +17,7 @@ class ConverterController extends Controller
      */
     public function index()
     {
-        return $this->render('homepage/index.html.twig');
+        return $this->render('converter/index.html.twig');
     }
     
     /**
