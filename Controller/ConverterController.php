@@ -23,22 +23,21 @@ class ConverterController extends Controller
     /**
      * @Route("/converter/ajax", name="converter_ajax")
      */
-    public function ajax(Request $request, CurrencyConverter $currencyConverter)
+    public function ajax(Request $request)
     {
 
         if ($request->isXmlHttpRequest()) {  
-            
+                        
             $amount = floatval($request->request->get('amount'));
-                      
-//            $convertedValue = $currencyConverter->convert('asdad', CurrencyConverter::CURRENCY_PLN, $request->request->get('amount', 1));
+            $currencyConverter = new CurrencyConverter();          
             $convertedValue = $currencyConverter->convert(CurrencyConverter::CURRENCY_RUB, CurrencyConverter::CURRENCY_PLN, $amount);
 
             $jsonData = ['value' => $convertedValue];
 
-           return new JsonResponse($jsonData); 
+            return new JsonResponse($jsonData); 
         } else { 
-           return $this->render('homepage/ajax.html.twig'); 
-        } 
+            return $this->render('homepage/ajax.html.twig'); 
+        }
 
     }
        
