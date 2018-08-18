@@ -10,5 +10,6 @@ Kato\CurrencyConverterBundle\KatoCurrencyConverterBundle::class => ['all' => tru
 3. In config/routes.yaml add new routes
 
 kato_cc:
+
     resource: "@KatoCurrencyConverterBundle/Controller"
     type:     annotation
