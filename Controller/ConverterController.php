@@ -42,4 +42,13 @@ class ConverterController extends Controller
 
     }
     
+    /**
+     * @Route("/test", name="test")
+     */
+    public function test()
+    {
+        echo 'TEST';
+        return $this->render('homepage/index.html.twig');
+    }    
+    
 }
